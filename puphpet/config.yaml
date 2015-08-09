@@ -32,7 +32,7 @@ vagrantfile-local:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            c5bByAiQjr0q:
+            c5bByAiQjr0p:
                 owner: www-data
                 group: www-data
                 source: ./
@@ -101,19 +101,19 @@ apache:
     modules:
         - rewrite
     vhosts:
-        2f8igka3ipe3:
+        2f8igka3ipeo:
             servername: sims.dev
             serveraliases:
                 - www.sims.dev
-            docroot: /var/www/web/
-            port: '8080'
+            docroot: /var/www/symfony/web/
+            port: '80'
             setenv:
                 - 'APP_ENV dev'
                 - 'APP_DEBUG true'
             directories:
-                2gzjzoetkzlu:
+                2gzjzoetkzlk:
                     provider: directory
-                    path: /var/www/web/
+                    path: /var/www/symfony/web/
                     options:
                         - Indexes
                         - FollowSymlinks
@@ -218,7 +218,7 @@ mysql:
         wxha8NUe1WfW:
             grant:
                 - ALL
-            name: simms_dev
+            name: sims_dev
             host: localhost
             user: dev_user
             password: dev_user

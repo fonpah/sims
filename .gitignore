@@ -25,7 +25,21 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
-assets/
-vendor/
-web/assets/
+
 .vagrant/
+/sims/web/bundles/
+/sims/app/bootstrap.php.cache
+/sims/app/cache/*
+/sims/app/config/parameters.yml
+/sims/app/logs/*
+!sims/app/cache/.gitkeep
+!sims/app/logs/.gitkeep
+/sims/app/phpunit.xml
+/sims/build/
+/sims/vendor/
+/sims/bin/
+/sims/composer.phar
+
+node_modules/
+sims/web/assets/*
+sims/vendor/*
